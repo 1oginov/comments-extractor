@@ -1,7 +1,7 @@
 {
   "name": "comments-extractor",
-  "version": "1.0.0",
-  "description": "Extract comments from glob of files, annotated or not.",
+  "version": "1.0.1",
+  "description": "Extract comments from glob of files, annotated or not",
   "main": "./src/CommentsExtractor.js",
   "scripts": {
     "lint": "eslint ./src/"
@@ -13,8 +13,6 @@
   "keywords": [
     "comments",
     "extractor",
-    "javascript",
-    "es6",
     "annotations"
   ],
   "author": "Danila Loginov <danila@loginov.rocks> (https://loginov.rocks)",

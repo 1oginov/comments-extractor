@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/comments-extractor.iml" filepath="$PROJECT_DIR$/comments-extractor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/comments-extractor.iml" filepath="$PROJECT_DIR$/.idea/comments-extractor.iml" />
     </modules>
   </component>
 </project>
