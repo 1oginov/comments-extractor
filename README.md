@@ -36,7 +36,7 @@ Comments Extractor class.
 **Kind**: global class
 
 * [CommentsExtractor](#commentsextractor)
-  * [new CommentsExtractor(pattern, [annotation], [options], [esprimaClass], [fsClass], [globClass])](#new-commentsextractorpattern-annotation-options-esprimaclass-fsClass-globClass)
+  * [new CommentsExtractor(pattern, [annotation], [options], [esprimaClass], [fsClass], [globClass])](#new-commentsextractorpattern-annotation-options-esprimaclass-fsclass-globclass)
   * [extract() ⇒ Map.<string, Array>](#extract--mapstring-array)
 
 ---
