@@ -16,7 +16,7 @@ class CommentsExtractor {
    * @param {*} [globClass=glob]
    */
   constructor(pattern, annotation = '', options = {}, esprimaClass = esprima,
-              fsClass = fs, globClass = glob) {
+      fsClass = fs, globClass = glob) {
     this.annotation = annotation;
     this.esprima = esprimaClass;
     this.fs = fsClass;
