@@ -1,6 +1,6 @@
 {
   "name": "comments-extractor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Extract comments from glob of files, annotated or not",
   "main": "./src/CommentsExtractor.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1oginov/comments-extractor.git"
+    "url": "git+https://github.com/loginov-rocks/comments-extractor.git"
   },
   "keywords": [
     "annotations",
@@ -18,15 +18,15 @@
   "author": "Danila Loginov <danila@loginov.rocks> (https://loginov.rocks)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1oginov/comments-extractor/issues"
+    "url": "https://github.com/loginov-rocks/comments-extractor/issues"
   },
-  "homepage": "https://github.com/1oginov/comments-extractor",
+  "homepage": "https://github.com/loginov-rocks/comments-extractor",
   "dependencies": {
     "esprima": "^4.0.1",
     "glob": "^7.1.3"
   },
   "devDependencies": {
-    "eslint": "^5.6.1",
-    "eslint-config-google": "^0.10.0"
+    "eslint": "^5.11.1",
+    "eslint-config-google": "^0.11.0"
   }
 }

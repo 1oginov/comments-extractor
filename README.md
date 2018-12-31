@@ -1,7 +1,8 @@
 # comments-extractor
 
-[![dependencies Status](https://david-dm.org/1oginov/comments-extractor/status.svg)](https://david-dm.org/1oginov/comments-extractor)
-[![devDependencies Status](https://david-dm.org/1oginov/comments-extractor/dev-status.svg)](https://david-dm.org/1oginov/comments-extractor?type=dev)
+[![NpmVersion](https://img.shields.io/npm/v/comments-extractor.svg)](https://www.npmjs.com/package/comments-extractor)
+[![dependencies Status](https://david-dm.org/loginov-rocks/comments-extractor/status.svg)](https://david-dm.org/loginov-rocks/comments-extractor)
+[![devDependencies Status](https://david-dm.org/loginov-rocks/comments-extractor/dev-status.svg)](https://david-dm.org/loginov-rocks/comments-extractor?type=dev)
 
 Extract comments from glob of files, annotated or not.
 
