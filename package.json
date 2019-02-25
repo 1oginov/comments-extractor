@@ -1,6 +1,6 @@
 {
   "name": "comments-extractor",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Extract comments from glob of files, annotated or not",
   "main": "./src/CommentsExtractor.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "glob": "^7.1.3"
   },
   "devDependencies": {
-    "eslint": "^5.11.1",
-    "eslint-config-google": "^0.11.0"
+    "eslint": "^5.14.1",
+    "eslint-config-google": "^0.12.0"
   }
 }
