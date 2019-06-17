@@ -4,7 +4,8 @@
 [![Build Status](https://travis-ci.com/loginov-rocks/comments-extractor.svg?branch=master)](https://travis-ci.com/loginov-rocks/comments-extractor)
 [![Coverage Status](https://coveralls.io/repos/github/loginov-rocks/comments-extractor/badge.svg?branch=master)](https://coveralls.io/github/loginov-rocks/comments-extractor?branch=master)
 [![dependencies Status](https://david-dm.org/loginov-rocks/comments-extractor/status.svg)](https://david-dm.org/loginov-rocks/comments-extractor)
-[![devDependencies Status](https://david-dm.org/loginov-rocks/comments-extractor/dev-status.svg)](https://david-dm.org/loginov-rocks/comments-extractor?type=dev) [![Greenkeeper badge](https://badges.greenkeeper.io/loginov-rocks/comments-extractor.svg)](https://greenkeeper.io/)
+[![devDependencies Status](https://david-dm.org/loginov-rocks/comments-extractor/dev-status.svg)](https://david-dm.org/loginov-rocks/comments-extractor?type=dev)
+[![Greenkeeper badge](https://badges.greenkeeper.io/loginov-rocks/comments-extractor.svg)](https://greenkeeper.io/)
 
 Extract comments from glob of files, annotated or not.
 

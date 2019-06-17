@@ -1,6 +1,6 @@
 {
   "name": "comments-extractor",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Extract comments from glob of files, annotated or not",
   "main": "src/CommentsExtractor.js",
   "scripts": {
