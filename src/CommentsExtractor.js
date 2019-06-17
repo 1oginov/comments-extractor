@@ -8,15 +8,15 @@ const glob = require('glob');
 class CommentsExtractor {
   /**
    * Comments Extractor constructor.
-   * @param {string} pattern Glob pattern
-   * @param {string} [annotation=''] Annotation
-   * @param {Object} [options={}] Glob options
-   * @param {*} [esprimaClass=esprima]
-   * @param {*} [fsClass=fs]
-   * @param {*} [globClass=glob]
+   *
+   * @param {string} pattern - Glob pattern.
+   * @param {string} [annotation=''] - Annotation.
+   * @param {object} [options={}] - Glob options.
+   * @param {*} [esprimaClass=esprima] - Esprima class.
+   * @param {*} [fsClass=fs] - Fs class.
+   * @param {*} [globClass=glob] - Glob class.
    */
-  constructor(pattern, annotation = '', options = {}, esprimaClass = esprima,
-      fsClass = fs, globClass = glob) {
+  constructor(pattern, annotation = '', options = {}, esprimaClass = esprima, fsClass = fs, globClass = glob) {
     this.annotation = annotation;
     this.esprima = esprimaClass;
     this.fs = fsClass;
@@ -27,7 +27,8 @@ class CommentsExtractor {
 
   /**
    * Extract comments.
-   * @return {Map<string, Array>}
+   *
+   * @returns {Map<string, Array>} Map of filepath to array of comments.
    */
   extract() {
     const files = this.getFiles(this.pattern, this.options);
@@ -49,20 +50,21 @@ class CommentsExtractor {
 
   /**
    * Filter annotated comments only.
-   * @param {Array} comments
-   * @param {string} annotation
-   * @return {Array}
+   *
+   * @param {Array} comments - Comments.
+   * @param {string} annotation - Annotation.
+   * @returns {Array} Annotated comments array.
    */
   filterAnnotatedComments(comments, annotation) {
-    return comments.filter((comment) => comment.value.toLowerCase().
-        indexOf('@' + annotation.toLowerCase()) >= 0);
+    return comments.filter((comment) => comment.value.toLowerCase().indexOf('@' + annotation.toLowerCase()) >= 0);
   }
 
   /**
    * Get comments.
-   * @param {string} data
-   * @param {*} [esprima=this.esprima]
-   * @return {Array}
+   *
+   * @param {string} data - Data.
+   * @param {*} [esprima=this.esprima] - Esprima class.
+   * @returns {Array} Comments array.
    */
   getComments(data, esprima = this.esprima) {
     return esprima.parseModule(data, {
@@ -72,9 +74,10 @@ class CommentsExtractor {
 
   /**
    * Get file data.
-   * @param {string} path
-   * @param {*} [fs=this.fs]
-   * @return {string}
+   *
+   * @param {string} path - Path.
+   * @param {*} [fs=this.fs] - Fs class.
+   * @returns {string} File data.
    */
   getFileData(path, fs = this.fs) {
     return fs.readFileSync(path, 'utf-8');
@@ -82,10 +85,11 @@ class CommentsExtractor {
 
   /**
    * Get files fitting pattern.
-   * @param {string} pattern
-   * @param {Object} [options={}]
-   * @param {*} [glob=this.glob]
-   * @return {Array}
+   *
+   * @param {string} pattern - Pattern.
+   * @param {object} [options={}] - Options.
+   * @param {*} [glob=this.glob] - Glob class.
+   * @returns {Array} Files array.
    */
   getFiles(pattern, options = {}, glob = this.glob) {
     return glob.sync(pattern, options);
