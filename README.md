@@ -1,6 +1,8 @@
 # comments-extractor
 
 [![NpmVersion](https://img.shields.io/npm/v/comments-extractor.svg)](https://www.npmjs.com/package/comments-extractor)
+[![Build Status](https://travis-ci.com/loginov-rocks/comments-extractor.svg?branch=master)](https://travis-ci.com/loginov-rocks/comments-extractor)
+[![Coverage Status](https://coveralls.io/repos/github/loginov-rocks/comments-extractor/badge.svg?branch=master)](https://coveralls.io/github/loginov-rocks/comments-extractor?branch=master)
 [![dependencies Status](https://david-dm.org/loginov-rocks/comments-extractor/status.svg)](https://david-dm.org/loginov-rocks/comments-extractor)
 [![devDependencies Status](https://david-dm.org/loginov-rocks/comments-extractor/dev-status.svg)](https://david-dm.org/loginov-rocks/comments-extractor?type=dev)
 
@@ -23,8 +25,8 @@ const todos = extractor.extract();
 console.log(todos);
 // Outputs:
 // Map {
-//   './example-block.js' => [ { type: 'Block', value: '*\n * @TODO: Write this block TODO.\n ' } ],
-//   './example-line.js' => [ { type: 'Line', value: ' @TODO: Write this line TODO.' } ]
+//   './example-block.js' => [ { type: 'Block', value: '*\n * @TODO: Write this block.\n ' } ],
+//   './example-line.js' => [ { type: 'Line', value: ' @TODO: Write this line.' } ]
 // }
 ```
 
