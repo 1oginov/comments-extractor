@@ -1,11 +1,13 @@
 {
   "name": "comments-extractor",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Extract comments from glob of files, annotated or not",
   "main": "src/CommentsExtractor.js",
   "scripts": {
-    "ci": "npm run lint && npm run test:coverage",
-    "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls",
+    "check": "npm run lint && npm test",
+    "clean:coverage": "rimraf coverage",
+    "coverage": "npm run clean:coverage && npm run test:coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint src",
     "test": "jest",
     "test:coverage": "npm test -- --coverage"
@@ -30,11 +32,12 @@
     "glob": "^7.1.4"
   },
   "devDependencies": {
-    "coveralls": "^3.0.4",
-    "eslint": "^6.0.1",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.5.1",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-jsdoc": "^15.0.0",
-    "jest": "^24.8.0"
+    "eslint-plugin-jsdoc": "^15.9.5",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0"
   },
   "jest": {
     "verbose": true
