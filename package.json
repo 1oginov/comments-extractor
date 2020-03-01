@@ -35,7 +35,7 @@
     "coveralls": "^3.0.6",
     "eslint": "^6.5.1",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-jsdoc": "^21.0.0",
+    "eslint-plugin-jsdoc": "^22.0.0",
     "jest": "^24.9.0",
     "rimraf": "^3.0.0"
   },
