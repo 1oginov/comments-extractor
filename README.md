@@ -1,7 +1,8 @@
 # comments-extractor
 
 [![npm](https://img.shields.io/npm/v/comments-extractor)](https://www.npmjs.com/package/comments-extractor)
-[![CI](https://github.com/loginov-rocks/comments-extractor/workflows/CI/badge.svg)](https://github.com/loginov-rocks/comments-extractor/actions)
+[![CI](https://github.com/loginov-rocks/comments-extractor/actions/workflows/ci.yml/badge.svg)](https://github.com/loginov-rocks/comments-extractor/actions/workflows/ci.yml)
+[![CD](https://github.com/loginov-rocks/comments-extractor/actions/workflows/cd.yml/badge.svg)](https://github.com/loginov-rocks/comments-extractor/actions/workflows/cd.yml)
 [![Coverage Status](https://coveralls.io/repos/github/loginov-rocks/comments-extractor/badge.svg?branch=main)](https://coveralls.io/github/loginov-rocks/comments-extractor?branch=main)
 
 Extract comments from glob of files, annotated or not.
